@@ -4,3 +4,12 @@ import pytest
 def test_remove_name(user):
     user.name = ""
     assert user.name == ""
+
+
+@pytest.mark.check
+def test_name(user):
+    assert user.name == "Anastasiia"
+
+@pytest.mark.check
+def test_second_name(user):
+    assert user.second_name == "Kovalenko"
